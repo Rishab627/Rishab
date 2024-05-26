@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="/assets/images/8168634_chrome_browser_web_online_icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />\
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        padding: 10px;
+        
+      }
+
+      .bx {
+        height: 200px;
+        width: 200px;
+        background-color: red;
+        animation: ani 10s ease-in 0s infinite;
+        
+      }
+
+      @keyframes ani {
+        10% {
+          background-color: red;
+          height: 300px;
+          /* margin-left: 500px; */
+          
+        }
+
+        20% {
+          background-color: green;
+          
+        }
+
+        50%{
+          transform: rotate(360deg);
+        }
+
+        100% {
+          background-color: purple;
+        }
+      }
+
+      .bx:hover {
+        width: 300px;
+        transform: rotate(360deg);
+      }
+
+      .bx1{
+        height: 300px;
+        width: 300px;
+        border: 1px solid black;
+        overflow: hidden;
+        
+      }
+
+      .bx1 img{
+        width: 100%;
+        height: auto;
+        object-fit: fill;
+        transition: all 1.5s;
+      }
+
+      .bx1 img:hover{
+        transform: scale(0.5);
+      }
+
+
+
+    </style>
+  </head>
+
+  <body>
+
+
+    <div class="bx">
+
+    </div>
+
+
+
+    <div class="bx1">
+      <img src="https://images.unsplash.com/photo-1610391547035-b4541ce32da0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8" alt="">
+    </div>
+
+
+
+
+
+  </body>
+
+</html>
